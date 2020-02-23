@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url"/>
+    <property name="connection.driver_class"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    <mapping class="lk.ijse.dep.pos.entity.Customer"></mapping>
+    <mapping class="lk.ijse.dep.pos.entity.Item"></mapping>
+    <mapping class="lk.ijse.dep.pos.entity.Order"></mapping>
+    <mapping class="lk.ijse.dep.pos.entity.OrderDetail"></mapping>
+  </session-factory>
+</hibernate-configuration>
